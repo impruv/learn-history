@@ -1,0 +1,10 @@
+.header
+{
+    padding: 1rem 1rem;
+    width: 100%;
+    background-color: rgb(31 31 31);
+}
+
+.header__nav-list-item {
+    color: #fff;
+}

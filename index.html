@@ -3,109 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Учи историю</title>
 </head>
     <body>
-        <header>
-            <img src="./images/logo.webp" height="80" width="80" alt="logo">
+        <header class="header">
+            <img src="./images/logo.webp" class="header__loge" height="80" width="80" alt="logo">
 
-            <nav>
-                <ul>
-                    <li>Статьи</li>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item text_white-bold">Статьи</li>
 
-                    <li>О сайте</li>
+                    <li class="header__item text_white-bold">О сайте</li>
 
-                    <li>Контакты</li>
+                    <li class="header__item text_white-bold">Контакты</li>
                 </ul>
             </nav>
         </header>
 
-        <main>
-            <h1>Статьи</h1>
+        <main class="main">
+            <h1 class="main__header title">Статьи</h1>
 
-            <div class="filters">
-                <select name="section" id="section">
-                    <option value="">Все</option>
-                    <option value="">Всемирная история</option>
-                    <option value="">Отечественная история</option>
+            <section class="main__filters">
+                <select name="section" class="main__sections" id="section">
+                    <option class="main__sections-option text_black" value="">Все</option>
+                    <option class="main__sections-option text_black" value="world">Всемирная история</option>
+                    <option class="main__sections-option text_black" value="russia">Отечественная история</option>
                 </select>
 
-                <select name="world-stages" id="world-stages" multiple>
-                    <option value="">Все</option>
-                    <option value="">Первобытное общество</option>
-                    <option value="">Древний мир</option>
-                    <option value="">Средние века</option>
-                    <option value="">Новое время</option>
-                    <option value="">Новейшее время</option>
+                <select name="world-stages" class="main__world-stages" id="world-stages" multiple>
+                    <option class="main__world-stages-option text_black" value="">Все</option>
+                    <option class="main__world-stages-option text_black" value="">Первобытное общество</option>
+                    <option class="main__world-stages-option text_black" value="">Древний мир</option>
+                    <option class="main__world-stages-option text_black" value="">Средние века</option>
+                    <option class="main__world-stages-option text_black" value="">Новое время</option>
+                    <option class="main__world-stages-option text_black" value="">Новейшее время</option>
                 </select>
 
-                <select name="russian-stages" id="russian-stages" multiple>
-                    <option value="">Все</option>
-                    <option value="">Древнерусское государство</option>
-                    <option value="">Период феодальной раздробленности</option>
-                    <option value="">Образование централизированного русккого государства</option>
-                    <option value="">Российская империя</option>
-                    <option value="">Советсвикй период</option>
-                    <option value="">Российская федерация</option>
+                <select name="russian-stages" class="main__russian-stages" id="russian-stages" multiple>
+                    <option class="main__russian-stages-option text_black" value="">Все</option>
+                    <option class="main__russian-stages-option text_black" value="">Древнерусское государство</option>
+                    <option class="main__russian-stages-option text_black" value="">Период феодальной раздробленности</option>
+                    <option class="main__russian-stages-option text_black" value="">Образование централизированного русккого государства</option>
+                    <option class="main__russian-stages-option text_black" value="">Российская империя</option>
+                    <option class="main__russian-stages-option text_black" value="">Советсвикй период</option>
+                    <option class="main__russian-stages-option text_black" value="">Российская федерация</option>
                 </select>
 
-                <button>Сбросить фильтры</button>
-            </div>
+                <button class="main__clear-button button">СБРОСИТЬ ФИЛЬТРЫ</button>
+            </section>
 
-            <div class="articles">
-                <div>
-                    <a href="./pages/article.html">
-                        <span>Первобытно-общинный строй</span>
-                    </a>
-                </div>
+            <section class="main__articles">
+                <ul class="main__list">
+                    <div class="main__item">
+                        <a class="main__item-link" href="./pages/article.html">
+                            <span class="main__item-title text_black">Первобытно-общинный строй</span>
+                        </a>
+                    </div>
+    
+                    <div class="main__item">
+                        <a class="main__item-link" href="#">
+                            <span class="main__item-title text_black">Название статьи 2</span>
+                        </a>
+                    </div>
+    
+                    <div class="main__item">
+                        <a class="main__item-link" href="#">
+                            <span class="main__item-title text_black">Название статьи 3</span>
+                        </a>
+                    </div>
+                </ul>
 
-                <div>
-                    <a href="#">
-                        <span>Название статьи 2</span>
-                    </a>
-                </div>
-
-                <div>
-                    <a href="#">
-                        <span>Название статьи 3</span>
-                    </a>
-                </div>
-            </div>
+                <button class="main__show-more-button button">ПОКАЗАТЬ ЕЩЕ</button>
+            </section>
         </main>
 
-        <footer>
-            <img src="./images/logo.webp" height="80" width="80" alt="logo">
+        <footer class="footer">
+            <img class="footer__logo" src="./images/logo.webp" height="80" width="80" alt="logo">
 
-            <ul>
-                <li>
+            <ul class="footer__links">
+                <li class="footer__links-item">
                     <a href="https://t.me/istworld" aria-label="Telegram">
                         <img src="./images/telegram-icon.svg" alt="Telegram" width="24" height="24">
                     </a>
                 </li>
 
-                <li>
+                <li class="footer__links-item">
                     <a href="https://vk.com/dorostol" aria-label="Vk">
                         <img src="./images/vk-icon.svg" alt="Vk" width="24" height="24">
                     </a>
                 </li>
             </ul>
 
-            <div>
-                <ul>
-                    <li>
-                        <a href="mailto:artyom2003gh@mail.ru">
+            <div class="footer__contacts">
+                <ul class="footer___contacts-list">
+                    <li class="footer__contacts-list-item">
+                        <a class="footer__contacts-list-item-link text_white-bold" href="mailto:artyom2003gh@mail.ru">
                             artyom2003gh@mail.ru
                         </a>
                     </li>
     
-                    <li>
-                        <a href="tel:89024339557">
+                    <li class="footer__contacts-list-item">
+                        <a class="footer__contacts-list-item-link text_white-bold" href="tel:89024339557">
                             8-902-433-95-57
                         </a>
                     </li>
                 </ul>
 
-                <p>
+                <p class="footer__address text_white-bold">
                     респ. Марий Эл г. Йошкар-Ола ул. Карла Либкнехта 98 22
                 </p>
             </div>
