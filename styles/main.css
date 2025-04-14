@@ -3,7 +3,23 @@
 }
 
 .main__header {
+    margin-bottom: 30px;
     color: rgb(38, 38, 38);
+}
+
+.main__filters {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 2rem 2rem;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .15);
+}
+
+.main__clear-button {
+    justify-self: end;
 }
 
 .main__filters-sections {
@@ -16,4 +32,64 @@
 
 .main__filters-sections-option {
     color: rgb(38, 38, 38);  
+}
+
+.main__russian-stages {
+    margin-right: auto;
+}
+
+.main__articles {
+    margin-bottom: 30px;
+}
+
+.main__list {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.main__item {
+    position: relative;
+    flex: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
+}
+
+.main__item-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    z-index: 2;
+    background: linear-gradient(180deg,transparent,rgba(0,0,0,.7));
+}
+
+.main__item-image {
+    max-height: 200px;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+}
+
+.main__item-link {
+    border-radius: inherit;
+    position: relative;
+    display: block;
+}
+
+.main__item-title {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    z-index: 3;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.main__show-more-button-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }

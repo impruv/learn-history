@@ -32,3 +32,11 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: inherit;
+    padding: 0 1rem;
+}

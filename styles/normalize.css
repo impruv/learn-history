@@ -360,3 +360,7 @@ ol,ul {
 a {
   text-decoration: none;
 }
+
+select:focus {
+  outline: none;
+}

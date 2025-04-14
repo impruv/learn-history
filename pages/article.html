@@ -6,26 +6,31 @@
     <title>Учи историю</title>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/article.css">
 </head>
     <body>
         <header class="header">
-            <img src="../images/logo.webp" class="header__loge" height="80" width="80" alt="logo">
+            <div class="container">
+                <img src="../images/logo.webp" class="header__logo" height="80" width="80" alt="logo">
 
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item text_white-bold">Статьи</li>
-
-                    <li class="header__item text_white-bold">О сайте</li>
-
-                    <li class="header__item text_white-bold">Контакты</li>
-                </ul>
-            </nav>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="../index.html" class="text_white-bold">Статьи</a>
+                        </li>
+    
+                        <li class="header__item text_white-bold">
+                            <a href="#footer" class="text_white-bold">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <main>
-            <h1 class="title">Первобытно-общинный строй</h1>
+        <main class="article container">
+            <h1 class="article__title title">Первобытно-общинный строй</h1>
 
-            <p class="text_black">
+            <p class="article_paragraph text_black">
                 Первобытно-общинный строй, также общинно-родовой, — исторически первая в ряду общественно-экономических формаций, выделяемых в марксистской философии истории.
 
                 Первобытное общество характеризуется минимальным (но постоянно повышающимся с течением времени) уровнем развития производительных сил, которому соответствуют производственные отношения так называемого первобытного коммунизма и бесклассовое общество.
@@ -35,64 +40,66 @@
                 Первобытная эпоха — самый ранний и наиболее продолжительный отрезок истории человечества, простирающийся «от выделения человека из мира животных до возникновения классового общества». В зависимости от локальных условий на смену первобытнообщинному строю приходит одна из классовых формаций — азиатский способ производства, рабовладельческий, феодальный и т. п. строй вплоть до социалистического. Некоторые исследователи также выделяют раннеклассовое общество.
             </p>
 
-            <img src="../images/article-one-two-primitives.jfif" width="300" height="300" alt="Первобытные люди у костра">
+            <img src="../images/article-one-two-primitives.jfif" class="article_image" width="300" height="300" alt="Первобытные люди у костра">
 
-            <p class="text_black">
+            <p class="article_paragraph text_black">
                 Для основоположников исторической науки из Эллады и Древнего Рима первобытный строй выступал как объект непосредственного наблюдения за соседними народами «с высоты» более развитой цивилизации. Источники этой эпохи скудны и односторонни. Они отражают интерес античных авторов прежде всего к тем сторонам жизни соседних народов (традиции, верования, обычаи, поведенческие стереотипы и пр.), которые наиболее важны для оценки их потенциала в роли торговых партнёров, союзников и/или потенциальных противников. Первобытная периферия средневековой Европы описана современниками несколько обширнее, но и здесь нельзя сбрасывать со счетов, что и на Западе, и в Азии и на Дальнем Востоке эти племена на протяжении предыдущих веков находились в контакте с более развитыми соседями и таким образом испытывали воздействие с их стороны.
 
                 Первобытный уклад жизни попал в поле зрения философов задолго до того, как мыслители Нового времени стали придавать этому объекту форму категории — элемента системного, научного знания. Одним из наиболее ранних образцов здесь является поэма Гесиода «Труды и дни» с её известной пятичленной историографической схемой: золотой век → век серебра → век меди → век героев → век железа. Как и в марксистской «пятичленке» (от коммунизма первобытного к коммунизму будущего), у Гесиода просматривается циклическое движение, возвращение к исходной точке. Разница в том, что у Гесиода спираль нисходящая (с потенциальной возможностью вернуться в «золотой век» через очищение от грехов прошлого), а в марксизме восходящая, в которой прежнее качество равенства и распределения по потребностям достигается при качественно и количественно более высоком уровне развития производительных сил.
             </p>
 
-            <img src="../images/article-one-cave.jfif" width="300" height="300" alt="Первобытные люди в пещере">
+            <img src="../images/article-one-cave.jfif" class="article_image" width="300" height="300" alt="Первобытные люди в пещере">
 
-            <p class="text_black">
+            <p class="article_paragraph text_black">
                 О собирательстве («питаясь естественными кормами земли и случайными плодами деревьев») и «грубой и звериной жизни» писал Демокрит; от Дикеарха к Варрону и Титу Лукрецию Кару переходит гипотеза о развитии форм хозяйства от охоты и собирательства через скотоводство к земледелию. Лукреций, кроме того, излагает последовательность, близкую к современной археологической периодизации (каменный, бронзовый и железный века): «сначала люди использовали орудия из дерева и камня, затем открыли медь и только вслед за этим — железо». Развёртывая эту цепочку примеров, Ю. И. Семёнов выражает скептическое к ней отношение: «всё это были замечательные догадки».
 
                 Эпоха Великих географических открытий дала европейцам шанс изучить в буквальном смысле нетронутый материал Нового Света. На этом этапе, собственно, и зарождается современная этнография (Б. де Саагуна), хотя первые миссионеры углубляются в быт туземных народов с целью переломить его, а не изучить для академической науки. После XVIII века в числе объектов этнографических наблюдений всё больше внимания начинают привлекать аспекты социальной организации первобытных обществ, семьи и брака.
             </p>
 
-            <img src="../images/article-one-ancient-tools.jfif" width="300" height="300" alt="Примитивные орудия труда">
+            <img src="../images/article-one-ancient-tools.jfif" class="article_image" width="300" height="300" alt="Примитивные орудия труда">
 
-            <p class="text_black">
+            <p class="article_paragraph text_black">
                 Наконец, в XIX веке формируются научные школы (эволюционисты и диффузионисты) Льюис Морган и другие этнографы XIX века реконструировали доисторический быт по наблюдениям за индейцами, папуасами, пигмеями и другими туземными народами; развёртываются дискуссии о матриархате и патриархате. По этим объективным причинам этнографический материал преобладает и в «Происхождении семьи…». Однако главный вклад этого труда Энгельса в марксизм состоял не в презентации этнографических концепций, а в закладке метода изучения способа производства в единстве факторов производительных сил и производственных отношений. В этом свете определение родовой, эпизодически встречавшееся в довоенной литературе, лишь частично раскрывает сущностные черты этого строя.
             </p>
         </main>
 
-        <footer class="footer">
-            <img class="footer__logo" src="../images/logo.webp" height="80" width="80" alt="logo">
+        <footer class="footer" id="footer">
+            <div class="footer__cantainer container">
+                <img class="footer__logo" src="../images/logo.webp" height="160" width="160" alt="logo">
 
-            <ul class="footer__links">
-                <li class="footer__links-item">
-                    <a href="https://t.me/istworld" aria-label="Telegram">
-                        <img src="../images/telegram-icon.svg" alt="Telegram" width="24" height="24">
-                    </a>
-                </li>
-
-                <li class="footer__links-item">
-                    <a href="https://vk.com/dorostol" aria-label="Vk">
-                        <img src="../images/vk-icon.svg" alt="Vk" width="24" height="24">
-                    </a>
-                </li>
-            </ul>
-
-            <div class="footer__contacts">
-                <ul class="footer___contacts-list">
-                    <li class="footer__contacts-list-item">
-                        <a class="footer__contacts-list-item-link text_white-bold" href="mailto:artyom2003gh@mail.ru">
-                            artyom2003gh@mail.ru
-                        </a>
-                    </li>
+                <div class="footer__contacts">
+                    <ul class="footer__contacts-links">
+                        <li class="footer__contacts-links-item">
+                            <a href="https://t.me/istworld" aria-label="Telegram">
+                                <img src="../images/telegram-icon.svg" alt="Telegram" width="24" height="24">
+                            </a>
+                        </li>
     
-                    <li class="footer__contacts-list-item">
-                        <a class="footer__contacts-list-item-link text_white-bold" href="tel:89024339557">
-                            8-902-433-95-57
-                        </a>
-                    </li>
-                </ul>
+                        <li class="footer__contacts-links-item">
+                            <a href="https://vk.com/dorostol" aria-label="Vk">
+                                <img src="../images/vk-icon.svg" alt="Vk" width="24" height="24">
+                            </a>
+                        </li>
+                    </ul>
 
-                <p class="footer__address text_white-bold">
-                    респ. Марий Эл г. Йошкар-Ола ул. Карла Либкнехта 98 22
-                </p>
+                    <ul class="footer___contacts-list">
+                        <li class="footer__contacts-list-item">
+                            <a class="footer__contacts-list-item-link text_white-bold" href="mailto:artyom2003gh@mail.ru">
+                                artyom2003gh@mail.ru
+                            </a>
+                        </li>
+        
+                        <li class="footer__contacts-list-item">
+                            <a class="footer__contacts-list-item-link text_white-bold" href="tel:89024339557">
+                                8-902-433-95-57
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="footer__address text_white-bold">
+                        респ. Марий Эл г. Йошкар-Ола ул. Карла Либкнехта 98 22
+                    </p>
+                </div>
             </div>
         </footer>
     </body>

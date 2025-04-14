@@ -5,34 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Учи историю</title>
 </head>
     <body>
         <header class="header">
-            <img src="./images/logo.webp" class="header__loge" height="80" width="80" alt="logo">
+            <div class="container">
+                <img src="./images/logo.webp" class="header__logo" height="80" width="80" alt="logo">
 
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item text_white-bold">Статьи</li>
-
-                    <li class="header__item text_white-bold">О сайте</li>
-
-                    <li class="header__item text_white-bold">Контакты</li>
-                </ul>
-            </nav>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#articles-section" class="text_white-bold">Статьи</a>
+                        </li>
+    
+                        <li class="header__item text_white-bold">
+                            <a href="#footer" class="text_white-bold">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <main class="main">
+        <main class="main container">
             <h1 class="main__header title">Статьи</h1>
 
             <section class="main__filters">
-                <select name="section" class="main__sections" id="section">
-                    <option class="main__sections-option text_black" value="">Все</option>
+                <select name="section" class="main__sections select" id="section">
                     <option class="main__sections-option text_black" value="world">Всемирная история</option>
                     <option class="main__sections-option text_black" value="russia">Отечественная история</option>
                 </select>
 
-                <select name="world-stages" class="main__world-stages" id="world-stages" multiple>
+                <select name="world-stages" class="main__world-stages select select_large" id="world-stages">
                     <option class="main__world-stages-option text_black" value="">Все</option>
                     <option class="main__world-stages-option text_black" value="">Первобытное общество</option>
                     <option class="main__world-stages-option text_black" value="">Древний мир</option>
@@ -41,7 +45,7 @@
                     <option class="main__world-stages-option text_black" value="">Новейшее время</option>
                 </select>
 
-                <select name="russian-stages" class="main__russian-stages" id="russian-stages" multiple>
+                <select name="russian-stages" class="main__russian-stages select select_large" id="russian-stages">
                     <option class="main__russian-stages-option text_black" value="">Все</option>
                     <option class="main__russian-stages-option text_black" value="">Древнерусское государство</option>
                     <option class="main__russian-stages-option text_black" value="">Период феодальной раздробленности</option>
@@ -51,69 +55,85 @@
                     <option class="main__russian-stages-option text_black" value="">Российская федерация</option>
                 </select>
 
-                <button class="main__clear-button button">СБРОСИТЬ ФИЛЬТРЫ</button>
+                <button class="main__clear-button button button_without-border button_with-cross">Сбросить фильтры</button>
             </section>
 
-            <section class="main__articles">
+            <section class="main__articles" id="articles-section">
                 <ul class="main__list">
                     <div class="main__item">
                         <a class="main__item-link" href="./pages/article.html">
-                            <span class="main__item-title text_black">Первобытно-общинный строй</span>
+                            <div class="main__item-shadow"></div>
+
+                            <img class="main__item-image" src="./images/article-ancient-society.jpg">
+
+                            <span class="main__item-title text_white-bold">Первобытно-общинный строй</span>
                         </a>
                     </div>
     
                     <div class="main__item">
                         <a class="main__item-link" href="#">
-                            <span class="main__item-title text_black">Название статьи 2</span>
+                            <div class="main__item-shadow"></div>
+
+                            <img class="main__item-image" src="./images/article-berlin-siege.jfif">
+
+                            <span class="main__item-title text_white-bold">Взятие Берлина</span>
                         </a>
                     </div>
     
                     <div class="main__item">
                         <a class="main__item-link" href="#">
-                            <span class="main__item-title text_black">Название статьи 3</span>
+                            <div class="main__item-shadow"></div>
+
+                            <img class="main__item-image" src="./images/article-senate-revolt.jpg">
+
+                            <span class="main__item-title text_white-bold">Восстание на сенатской площади</span>
                         </a>
                     </div>
                 </ul>
 
-                <button class="main__show-more-button button">ПОКАЗАТЬ ЕЩЕ</button>
+                <div class="main__show-more-button-wrapper">
+                    <button class="main__show-more-button button">ПОКАЗАТЬ ЕЩЕ</button>
+                </div>
             </section>
         </main>
 
-        <footer class="footer">
-            <img class="footer__logo" src="./images/logo.webp" height="80" width="80" alt="logo">
+        <footer class="footer" id="footer">
+            <div class="footer__cantainer container">
+                <img class="footer__logo" src="./images/logo.webp" height="160" width="160" alt="logo">
 
-            <ul class="footer__links">
-                <li class="footer__links-item">
-                    <a href="https://t.me/istworld" aria-label="Telegram">
-                        <img src="./images/telegram-icon.svg" alt="Telegram" width="24" height="24">
-                    </a>
-                </li>
-
-                <li class="footer__links-item">
-                    <a href="https://vk.com/dorostol" aria-label="Vk">
-                        <img src="./images/vk-icon.svg" alt="Vk" width="24" height="24">
-                    </a>
-                </li>
-            </ul>
-
-            <div class="footer__contacts">
-                <ul class="footer___contacts-list">
-                    <li class="footer__contacts-list-item">
-                        <a class="footer__contacts-list-item-link text_white-bold" href="mailto:artyom2003gh@mail.ru">
-                            artyom2003gh@mail.ru
-                        </a>
-                    </li>
+                <div class="footer__contacts">
+                    <ul class="footer__contacts-links">
+                        <li class="footer__contacts-links-item">
+                            <a href="https://t.me/istworld" aria-label="Telegram">
+                                <img src="./images/telegram-icon.svg" alt="Telegram" width="24" height="24">
+                            </a>
+                        </li>
     
-                    <li class="footer__contacts-list-item">
-                        <a class="footer__contacts-list-item-link text_white-bold" href="tel:89024339557">
-                            8-902-433-95-57
-                        </a>
-                    </li>
-                </ul>
+                        <li class="footer__contacts-links-item">
+                            <a href="https://vk.com/dorostol" aria-label="Vk">
+                                <img src="./images/vk-icon.svg" alt="Vk" width="24" height="24">
+                            </a>
+                        </li>
+                    </ul>
 
-                <p class="footer__address text_white-bold">
-                    респ. Марий Эл г. Йошкар-Ола ул. Карла Либкнехта 98 22
-                </p>
+                    <ul class="footer___contacts-list">
+                        <li class="footer__contacts-list-item">
+                            <a class="footer__contacts-list-item-link text_white-bold" href="mailto:artyom2003gh@mail.ru">
+                                artyom2003gh@mail.ru
+                            </a>
+                        </li>
+        
+                        <li class="footer__contacts-list-item">
+                            <a class="footer__contacts-list-item-link text_white-bold" href="tel:89024339557">
+                                8-902-433-95-57
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="footer__address text_white-bold">
+                        респ. Марий Эл г. Йошкар-Ола ул. Карла Либкнехта 98 22
+                    </p>
+                </div>
             </div>
         </footer>
     </body>
