@@ -34,6 +34,10 @@
     color: rgb(38, 38, 38);  
 }
 
+.main__world-stages {
+    margin-right: auto;
+}
+
 .main__russian-stages {
     margin-right: auto;
 }
