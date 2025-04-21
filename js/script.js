@@ -33,6 +33,17 @@ function initFilterHandler()
             russianStagesFilter.classList.remove('hidden');
         }
     });
+
+    document.getElementById('clear-filters-button').addEventListener('click', (event) => {
+        if (!worldStagesFilter.classList.contains('hidden'))
+        {
+            worldStagesFilter.value = 'all';
+        }
+        else if (!russianStagesFilter.classList.contains('hidden'))
+        {
+            russianStagesFilter.value = 'all';
+        }
+    });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
