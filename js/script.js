@@ -80,7 +80,63 @@ function initFilterOptions()
     ]);
 }
 
+function createArticleCardHtmlElement(cardData)
+{
+    const card = document.createElement('div');
+    card.classList.add('main__item');
+
+    const linkWrapper = document.createElement('a');
+    linkWrapper.classList.add('main__item-link');
+    linkWrapper.href = cardData.contentUrl;
+
+    const shadowBox = document.createElement('div');
+    shadowBox.classList.add('main__item-shadow');
+
+    const cardImage = document.createElement('img');
+    cardImage.classList.add('main__item-image');
+    cardImage.src = cardData.image;
+
+    const cardTitle = document.createElement('span');
+    cardTitle.classList.add('main__item-title', 'text_white-bold');
+    cardTitle.textContent = cardData.title;
+
+    linkWrapper.appendChild(shadowBox);
+    linkWrapper.appendChild(cardImage);
+    linkWrapper.appendChild(cardTitle);
+    card.appendChild(linkWrapper);
+
+    return card;
+}
+
+function loadArticles()
+{
+    const articles = [
+        {
+            title: 'Первобытно-общинный строй',
+            image: './images/article-ancient-society.jpg',
+            contentUrl: './pages/article.html',
+        },
+        {
+            title: 'Взятие Берлина',
+            image: './images/article-berlin-siege.jfif',
+            contentUrl: '#',
+        },
+        {
+            title: 'Восстание на сенатской площади',
+            image: './images/article-senate-revolt.jpg',
+            contentUrl: '#',
+        },
+    ];
+
+
+    const articlesList = document.getElementById('articles-list');
+    articles.forEach(articleData => {
+        articlesList.appendChild(createArticleCardHtmlElement(articleData));
+    });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     initFilterHandler();
     initFilterOptions();
+    loadArticles();
 });
